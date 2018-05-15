@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
 
   @@count = 0
@@ -31,8 +33,11 @@ class Song
     @@genre_count = {}
     @@genres.each do |genre|
       if @@genre_count[genre]
-
+        "I already exist"
+      else
+        "I don't exist"
       end
+    binding.pry
     end
   end
 
