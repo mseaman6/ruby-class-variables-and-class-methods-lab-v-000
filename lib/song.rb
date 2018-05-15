@@ -1,6 +1,8 @@
 class Song
 
 @@count = 0
+@@artists
+@@genres
 
 attr_accessor :name, :artist, :genre
 
@@ -15,5 +17,6 @@ def self.count
   @@count
 end
 
+def self.genres
 
 end
