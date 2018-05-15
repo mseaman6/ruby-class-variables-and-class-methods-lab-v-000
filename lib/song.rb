@@ -32,11 +32,10 @@ class Song
   def self.genre_count
     @@genre_count = {}
     @@genres.each do |genre|
-      binding.pry
       if @@genre_count[genre]
-        "I already exist"
+        @@genre_counts[genre] += 1
       else
-        "I don't exist"
+        @@genre_counts[genre] = 1
       end
     end
   end
